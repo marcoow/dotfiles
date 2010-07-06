@@ -1,0 +1,61 @@
+[user]
+  name  = Marco Otte-Witte
+  email = marco.otte-witte@simplabs.com
+
+[alias]
+  sh     = !git-sh
+  st     = !git-status
+  ss     = !git-status -s
+  ci     = !git-commit
+  a      = !git-add
+  grab   = !git-grab
+  thanks = !git-thanks
+  cv     = !git-cv
+  track  = !git-track
+  ll     = log --pretty=oneline --abbrev-commit --max-count=15
+  review = log -p --max-count=1
+  wip    = !git add -u && git commit -m ...
+  wipc   = !date >> WIP && git add WIP && git commit -m ...
+  fp     = format-patch --stdout
+
+[core]
+  filemode         = true
+  logallrefupdates = true
+  whitespace       = space-before-tab, trailing-space
+  editor           = mate -w
+
+[branch]
+  autosetupmerge = true
+
+[diff]
+  renames        = copies
+  mnemonicprefix = true
+
+[help]
+  browser = open
+
+[sendemail]
+  smtpserver     = smtp.gmail.com
+  smtpserverport = 587
+  smtpencryption = tls
+  smtpuser       = marco.otte-witte@simplabs.com
+
+[color]
+  ui = auto
+
+[color "diff"]
+  meta = blue bold
+  frag = magenta bold
+  old  = red bold
+  new  = green bold
+
+[color "branch"]
+  current = yellow reverse
+  local   = yellow bold
+  remote  = green bold
+  plain   = red bold
+
+[color "status"]
+  added     = yellow
+  changed   = green bold
+  untracked = blue bold
