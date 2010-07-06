@@ -1,14 +1,4 @@
-#!/bin/sh
-
-: ${USER_BASH_COMPLETION_DIR:=~/.bash_completion.d}
-
-test -n "$USER_BASH_COMPLETION_DIR" && {
-  if [ -d $USER_BASH_COMPLETION_DIR -a -r $USER_BASH_COMPLETION_DIR -a \
-       -x $USER_BASH_COMPLETION_DIR ]; then
-    for i in $USER_BASH_COMPLETION_DIR/*; do
-      [[ ${i##*/} != @(*~|*.bak|*.swp|\#*\#|*.dpkg*|.rpm*) ]] &&
-      [ \( -f $i -o -h $i \) -a -r $i ] && . $i
-    done
-  fi
-  unset i
-}
+source ~/.bash_completion.d/cheat.bash
+source ~/.bash_completion.d/git-completion.bash
+source ~/.bash_completion.d/misc.bash
+source ~/.bash_completion.d/rake.bash
