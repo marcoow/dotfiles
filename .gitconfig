@@ -17,6 +17,7 @@
   wip    = !git add -u && git commit -m ...
   wipc   = !date >> WIP && git add WIP && git commit -m ...
   fp     = format-patch --stdout
+  cp     = cherry-pick
 
 [core]
   filemode         = true
