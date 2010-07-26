@@ -7,6 +7,7 @@
   st     = !git-status
   ss     = !git-status -s
   ci     = !git-commit
+  co     = !git-checkout
   a      = !git-add
   grab   = !git-grab
   thanks = !git-thanks
