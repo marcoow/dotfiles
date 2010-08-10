@@ -19,6 +19,7 @@
   wipc   = !date >> WIP && git add WIP && git commit -m ...
   fp     = format-patch --stdout
   cp     = cherry-pick
+  sm     = submodule
 
 [core]
   filemode         = true
