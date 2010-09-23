@@ -5,3 +5,5 @@ export PATH="/usr/local/Cellar/ruby-enterprise-edition/2010.02/bin:/usr/local/sb
 export EDITOR="mate -w"
 
 export PS1='\[\033[1;39m\]\u@\W $(__git_ps1 "[\[\033[1;34m\]%s\[\033[1;39m\]] ")> '
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
