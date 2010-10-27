@@ -4,8 +4,6 @@
 gem: --no-ri --no-rdoc
 :sources: 
 - http://rubygems.org/
-- http://gems.github.com
-- http://gems.rubyforge.org
 :backtrace: false
 :verbose: true
 :benchmark: false

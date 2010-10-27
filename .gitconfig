@@ -15,6 +15,7 @@
   track  = !git-track
   ll     = log --pretty=oneline --abbrev-commit --max-count=15
   review = log -p --max-count=1
+  extlog = log --stat
   wip    = !git add -u && git commit -m ...
   wipc   = !date >> WIP && git add WIP && git commit -m ...
   fp     = format-patch --stdout
