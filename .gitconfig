@@ -27,7 +27,6 @@
   logallrefupdates = true
   whitespace       = space-before-tab, trailing-space
   editor           = mate -w
-	autocrlf         = true
 
 [branch]
   autosetupmerge = true
