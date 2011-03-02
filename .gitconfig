@@ -1,6 +1,6 @@
 [user]
-  name  = Marco Otte-Witte
-  email = marco.otte-witte@simplabs.com
+	name = Marco Otte-Witte
+	email = marco.otte-witte@simplabs.com
 
 [alias]
   sh     = !git-sh
@@ -21,6 +21,7 @@
   fp     = format-patch --stdout
   cp     = cherry-pick
   sm     = submodule
+  cntn   = branch --contains
 
 [core]
   filemode         = true
