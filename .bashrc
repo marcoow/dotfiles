@@ -1,4 +1,5 @@
 source ~/.bash_completion
+source ~/.bash_aliases
 
 export PATH="/usr/local/Cellar/ruby-enterprise-edition/2010.02/bin:/usr/local/sbin:/usr/local/bin:$PATH"
 
