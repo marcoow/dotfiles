@@ -64,3 +64,7 @@
   added     = yellow
   changed   = green bold
   untracked = blue bold
+[advice]
+  statusHints = false
+[rerere]
+  enabled = true
