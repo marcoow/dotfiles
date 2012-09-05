@@ -5,7 +5,7 @@ export PATH="$HOME/.rbenv/bin:/usr/local/sbin:/usr/local/bin:$PATH"
 
 export EDITOR="mate -w"
 
-eval "$(rbenv init -)"
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 function __active_ruby_version {
   echo `rbenv version-name` | awk -F '-' '{print $1}'
