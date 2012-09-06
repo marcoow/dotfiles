@@ -8,6 +8,8 @@ source $ZSH/oh-my-zsh.sh
 
 source ~/.zsh_aliases
 
+zstyle ':completion:*' special-dirs true
+
 autoload -U colors && colors
 setopt prompt_subst
 
