@@ -6,11 +6,15 @@ CASE_SENSITIVE="true"
 
 source $ZSH/oh-my-zsh.sh
 
+source ~/.zsh_aliases
+
 autoload -U colors && colors
 setopt prompt_subst
+
+export PATH="$HOME/.rbenv/bin:/usr/local/sbin:/usr/local/bin:$PATH"
 
 if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
 
 function rbenv_prompt_info() { echo "$(ruby -v | cut -f 2 -d ' ')" }
 
-PROMPT='%n@%1~$(vcprompt -f " [%%{$fg_bold[blue]%%}%b%%{$reset_color%%}]") (%{$fg_bold[yellow]%}$(rbenv_prompt_info)%{$reset_color%}) > %{$reset_color%}'
+PROMPT='%n@%1~$(vcprompt -f " [%%{$fg_bold[green]%%}%b%%{$reset_color%%}]") (%{$fg_bold[yellow]%}$(rbenv_prompt_info)%{$reset_color%}) > %{$reset_color%}'
