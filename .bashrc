@@ -11,4 +11,4 @@ function __active_ruby_version {
   echo `rbenv version-name` | awk -F '-' '{print $1}'
 }
 
-export PS1='\u@\W $(__git_ps1 "[\[\033[1;34m\]%s\[\033[1;39m\]] ")(\[\033[0;37m\]$(__active_ruby_version)\[\033[1;39m\]) > '
+export PS1='\u@\W $(__git_ps1 "[\[\033[1;32m\]%s\[\033[1;39m\]] ")(\[\033[0;37m\]$(__active_ruby_version)\[\033[1;39m\]) > '
