@@ -17,4 +17,4 @@ if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
 
 function rbenv_prompt_info() { echo "$(ruby -v | cut -f 2 -d ' ')" }
 
-PROMPT='%n@%1~$(vcprompt -f " [%%{$fg_bold[green]%%}%b%%{$reset_color%%}]") (%{$fg_bold[yellow]%}$(rbenv_prompt_info)%{$reset_color%}) > %{$reset_color%}'
+PROMPT='%n@%1~$(vcprompt -f " [%%{$fg_bold[green]%%}%b%%{$reset_color%%}]") (%{$FG[008]%}$(rbenv_prompt_info)%{$reset_color%}) > %{$reset_color%}'
