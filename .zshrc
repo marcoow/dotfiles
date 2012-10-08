@@ -3,17 +3,20 @@ ZSH=$HOME/.oh-my-zsh
 plugins=(git osx)
 
 CASE_SENSITIVE="true"
+INC_APPEND_HISTORY="false"
 
 source $ZSH/oh-my-zsh.sh
 
 source ~/.zsh_aliases
 
 zstyle ':completion:*' special-dirs true
+setopt NO_cdable_vars
 
 autoload -U colors && colors
 setopt prompt_subst
 
 export PATH="$HOME/.rbenv/bin:/usr/local/sbin:/usr/local/bin:$PATH"
+export EDITOR=mate
 
 if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
 
