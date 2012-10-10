@@ -8,6 +8,7 @@ zstyle ':completion:*' insert-tab pending
 zstyle ':completion:*' list-colors 'Exfxcxdxbxegedabagacad'
 zstyle ':completion::complete:*' use-cache on
 zstyle ':completion::complete:*' cache-path .zcache
+zstyle ':completion:*:*:*:*:*' menu select
 
 zle -N edit-command-line
 
@@ -17,6 +18,7 @@ SAVEHIST=10000
 
 setopt NO_CDABLE_VARS
 setopt COMPLETE_IN_WORD
+setopt AUTO_MENU
 setopt ALWAYS_TO_END
 setopt INC_APPEND_HISTORY
 setopt HIST_IGNORE_DUPS
