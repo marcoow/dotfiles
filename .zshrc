@@ -1,12 +1,3 @@
-ZSH=$HOME/.oh-my-zsh
-
-plugins=(git osx)
-
-CASE_SENSITIVE="true"
-INC_APPEND_HISTORY="false"
-
-source $ZSH/oh-my-zsh.sh
-
 source ~/.zsh_aliases
 
 zstyle ':completion:*' special-dirs true
