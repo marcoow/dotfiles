@@ -1,0 +1,4 @@
+source ~/.bash/completion.d/cheat.bash
+source ~/.bash/completion.d/git-completion.bash
+source ~/.bash/completion.d/misc.bash
+source ~/.bash/completion.d/rake.bash
