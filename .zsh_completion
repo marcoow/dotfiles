@@ -1,0 +1,13 @@
+autoload -U compinit && compinit
+
+zstyle ':completion:*' special-dirs true
+zstyle ':completion:*' insert-tab pending
+zstyle ':completion:*' list-colors 'Exfxcxdxbxegedabagacad'
+zstyle ':completion::complete:*' use-cache on
+zstyle ':completion::complete:*' cache-path .zcache
+zstyle ':completion:*:*:*:*:*' menu select
+
+setopt NO_CDABLE_VARS
+setopt COMPLETE_IN_WORD
+setopt AUTO_MENU
+setopt ALWAYS_TO_END

@@ -1,0 +1,5 @@
+setopt PROMPT_SUBST
+
+function rbenv_prompt_info() { echo "$(ruby -v | cut -f 2 -d ' ' | cut -f 1 -d 'p')" }
+
+PROMPT='%n@%1~$(vcprompt -f " [%%{$fg_bold[yellow]%%}%b%%{$reset_color%%}]") (%{$fg_bold[blue]%}$(rbenv_prompt_info)%{$reset_color%}) > %{$reset_color%}'
