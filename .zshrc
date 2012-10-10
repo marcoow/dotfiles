@@ -3,6 +3,7 @@ compinit
 
 zstyle ':completion:*' special-dirs true
 zstyle ':completion:*' insert-tab pending
+zstyle ':completion:*' list-colors 'Exfxcxdxbxegedabagacad'
 
 source ~/.zsh_aliases
 
@@ -19,6 +20,7 @@ autoload -U colors && colors
 
 export PATH="$HOME/.rbenv/bin:/usr/local/sbin:/usr/local/bin:$PATH"
 export EDITOR=mate
+export CLICOLOR=1
 
 if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
 
