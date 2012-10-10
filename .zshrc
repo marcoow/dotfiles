@@ -1,9 +1,9 @@
-source ~/.zsh_completion
-source ~/.zsh_history
-source ~/.zsh_keybindings
-source ~/.zsh_aliases
-source ~/.zsh_commandline
-source ~/.zsh_prompt
+source ~/.zsh/completion
+source ~/.zsh/history
+source ~/.zsh/keybindings
+source ~/.zsh/aliases
+source ~/.zsh/commandline
+source ~/.zsh/prompt
 
 export PATH="$HOME/.rbenv/bin:/usr/local/sbin:/usr/local/bin:$PATH"
 export EDITOR=mate
