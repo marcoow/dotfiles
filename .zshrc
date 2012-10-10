@@ -1,5 +1,7 @@
-autoload -U compinit
-compinit
+autoload -U colors && colors
+autoload -U compinit && compinit
+
+autoload -U edit-command-line
 
 zstyle ':completion:*' special-dirs true
 zstyle ':completion:*' insert-tab pending
@@ -7,18 +9,32 @@ zstyle ':completion:*' list-colors 'Exfxcxdxbxegedabagacad'
 zstyle ':completion::complete:*' use-cache on
 zstyle ':completion::complete:*' cache-path .zcache
 
-source ~/.zsh_aliases
+zle -N edit-command-line
+
+HISTFILE=$HOME/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
 
 setopt NO_CDABLE_VARS
 setopt COMPLETE_IN_WORD
 setopt ALWAYS_TO_END
 setopt INC_APPEND_HISTORY
 setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_SPACE
 setopt HIST_REDUCE_BLANKS
-setopt EXTENDED_HISTORY
 setopt PROMPT_SUBST
 
-autoload -U colors && colors
+bindkey '^r' history-incremental-search-backward
+bindkey '^[[A' up-line-or-search
+bindkey '^[[B' down-line-or-search
+
+bindkey '^?' backward-delete-char
+bindkey "^[[3~" delete-char
+bindkey "^[3;5~" delete-char
+bindkey "\e[3~" delete-char
+bindkey '\C-x\C-e' edit-command-line
+
+source ~/.zsh_aliases
 
 export PATH="$HOME/.rbenv/bin:/usr/local/sbin:/usr/local/bin:$PATH"
 export EDITOR=mate
