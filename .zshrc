@@ -4,6 +4,8 @@ compinit
 zstyle ':completion:*' special-dirs true
 zstyle ':completion:*' insert-tab pending
 zstyle ':completion:*' list-colors 'Exfxcxdxbxegedabagacad'
+zstyle ':completion::complete:*' use-cache on
+zstyle ':completion::complete:*' cache-path .zcache
 
 source ~/.zsh_aliases
 
