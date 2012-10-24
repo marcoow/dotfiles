@@ -1,2 +1,2 @@
 excludeDirectories = "{$excludeDirectories,tmp,log,target}"
-excludeFiles       = "{$excludeFiles,*.tmp,*.log}"
+excludeFiles       = "{$excludeFiles,*.tmp,*.log,.tm_properties}"
