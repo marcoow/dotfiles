@@ -23,6 +23,7 @@
   cp     = cherry-pick
   sm     = submodule
   cntn   = branch --contains
+  undo   = reset --soft HEAD^
 
 [core]
   filemode         = true
