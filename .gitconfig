@@ -2,6 +2,9 @@
   name  = Marco Otte-Witte
   email = marco.otte-witte@simplabs.com
 
+[credential]
+  helper = osxkeychain
+
 [alias]
   sh     = !git-sh
   st     = !git-status
