@@ -2,6 +2,9 @@
 	name  = Marco Otte-Witte
 	email = mottewitte@rim.com
 
+[credential]
+  helper = osxkeychain
+
 [alias]
   sh     = !git-sh
   st     = !git-status
