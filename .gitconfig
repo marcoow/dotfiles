@@ -37,6 +37,7 @@
 
 [branch]
   autosetupmerge = true
+  autosetupmerge = always
 
 [diff]
   renames        = copies
