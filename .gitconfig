@@ -9,7 +9,7 @@
   sh     = !git-sh
   st     = !git-status
   ss     = !git-status -s
-  ci     = !git-commit
+  ci     = !git-commit -v
   co     = !git-checkout
   a      = !git-add
   grab   = !git-grab
