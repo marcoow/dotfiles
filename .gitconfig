@@ -42,6 +42,7 @@
 [diff]
   renames        = copies
   mnemonicprefix = true
+  algorithm      = patience
 
 [help]
   browser = open
