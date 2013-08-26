@@ -1,2 +1,19 @@
-excludeDirectories = "{$excludeDirectories,tmp,log,target}"
-excludeFiles       = "{$excludeFiles,*.tmp,*.log,.tm_properties}"
+encoding       = UTF-8
+fontName       = "Monaco"
+fontSize       = 12
+lineEndings    = '\n'
+showInvisibles = false
+softWrap       = false
+tabSize        = 2
+
+excludeInFolderSearch = "{$excludeInFolderSearch,log,tmp,vendor}"
+
+[ text ]
+spellChecking = true
+softWrap      = false
+wrapColumn    = "Use Window Frame"
+softTabs      = true
+tabSize       = 2
+
+[ "{Capfile,Gemfile,Gemfile.lock,Guardfile}" ]
+fileType = source.ruby
