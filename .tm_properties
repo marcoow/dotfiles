@@ -7,7 +7,7 @@ softWrap       = false
 tabSize        = 2
 
 excludeInFolderSearch = "{$excludeInFolderSearch,log,tmp,vendor,dist}"
-includeFiles          = "{$includeFiles,.ruby-version,.rspec,.gitignore}"
+includeFiles          = "{$includeFiles,.ruby-version,.rspec,.gitignore,.travis.yml}"
 
 [ text ]
 spellChecking = true
