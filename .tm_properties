@@ -6,7 +6,7 @@ showInvisibles = false
 softWrap       = false
 tabSize        = 2
 
-excludeDirectories = "{$excludeDirectories,log,tmp,vendor,dist,node_modules}"
+excludeDirectories = "{$excludeDirectories,log,tmp,node_modules}"
 includeFiles       = "{$includeFiles,.ruby-version,.rspec,.gitignore,.travis.yml,.env}"
 
 [ text ]
