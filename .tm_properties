@@ -8,7 +8,7 @@ tabSize        = 2
 
 excludeDirectories    = "{$excludeDirectories,log,tmp,node_modules}"
 excludeInFolderSearch = "{$excludeInFolderSearch,log,tmp,node_modules,dist,vendor}"
-includeFiles          = "{$includeFiles,.ruby-version,.rspec,.gitignore,.travis.yml,.env}"
+includeFiles          = "{$includeFiles,.ruby-version,.rspec,.gitignore,.travis.yml,.env,.jshintrc}"
 
 [ text ]
 spellChecking = true
