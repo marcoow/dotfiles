@@ -15,6 +15,7 @@ fi
 
 export PATH="$HOME/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/local/share/npm/bin:/usr/sbin:$PATH"
 export EDITOR=mate
+export ANDROID_HOME=`brew --prefix android`
 
 if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
 
