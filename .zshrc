@@ -18,5 +18,6 @@ export EDITOR=mate
 export ANDROID_HOME=`brew --prefix android`
 
 if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
+if which gh > /dev/null; then eval "$(gh alias -s)"; fi
 
 export PATH=./bin:"$PATH"
