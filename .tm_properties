@@ -5,6 +5,7 @@ lineEndings    = '\n'
 showInvisibles = false
 softWrap       = false
 tabSize        = 2
+softTabs       = true
 
 excludeDirectories    = "{$excludeDirectories,log,tmp,node_modules,bower_components}"
 excludeInFolderSearch = "{$excludeInFolderSearch,log,tmp,node_modules,dist,vendor,bower_components}"
@@ -12,10 +13,6 @@ includeFiles          = "{$includeFiles,.ruby-version,.rspec,.gitignore,.travis.
 
 [ text ]
 spellChecking = true
-softWrap      = false
-wrapColumn    = "Use Window Frame"
-softTabs      = true
-tabSize       = 2
 
 [ "{Capfile,Gemfile,Gemfile.lock,Guardfile}" ]
 fileType = source.ruby
