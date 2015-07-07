@@ -31,9 +31,10 @@
 [core]
   filemode         = true
   logallrefupdates = true
-  whitespace       = space-before-tab, trailing-space
+  whitespace       = space-before-tab, trailing-space, blank-at-eol, blank-at-eof
   editor           = mate -w
   pager            = less -r
+  autocrlf         = input
 
 [branch]
   autosetupmerge = true
