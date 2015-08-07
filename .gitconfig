@@ -28,6 +28,9 @@
   cntn   = branch --contains
   undo   = reset --soft HEAD^
 
+[commit]
+  template = ~/.gitmessage
+
 [core]
   filemode         = true
   logallrefupdates = true
