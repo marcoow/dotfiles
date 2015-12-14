@@ -7,7 +7,7 @@ softWrap       = false
 tabSize        = 2
 softTabs       = true
 
-excludeDirectories    = "{$excludeDirectories,log,tmp,node_modules,bower_components,_build}"
+excludeDirectories    = "{$excludeDirectories,log,tmp,node_modules,dist,bower_components,_build}"
 excludeInFolderSearch = "{$excludeInFolderSearch,log,tmp,node_modules,dist,vendor,bower_components,_build}"
 includeFiles          = "{$includeFiles,.ruby-version,.rspec,.gitignore,.travis.yml,.env,.jshintrc,.bowerrc,.rubocop.yml,.gitlab-ci.yml,.jscsrc}"
 
