@@ -9,7 +9,7 @@ softTabs       = true
 
 excludeDirectories    = "{$excludeDirectories,log,tmp,node_modules,dist,bower_components,_build}"
 excludeInFolderSearch = "{$excludeInFolderSearch,log,tmp,node_modules,dist,bower_components,_build}"
-includeFiles          = "{$includeFiles,.ruby-version,.rspec,.gitignore,.travis.yml,.env,.jshintrc,.bowerrc,.rubocop.yml,.gitlab-ci.yml,.jscsrc}"
+includeFiles          = "{$includeFiles,.ruby-version,.node-version,.rspec,.gitignore,.travis.yml,.env,.jshintrc,.bowerrc,.rubocop.yml,.gitlab-ci.yml,.jscsrc}"
 
 [ text ]
 spellChecking = true
