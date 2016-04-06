@@ -1,5 +1,42 @@
 setopt PROMPT_SUBST
 
-function rbenv_prompt_info() { echo "$(ruby -v | cut -f 2 -d ' ' | cut -f 1 -d 'p')" }
+parse_git_branch() {
+  (command git symbolic-ref -q HEAD || command git name-rev --name-only --no-undefined --always HEAD) 2>/dev/null
+}
 
-PROMPT='%n@%1~$(vcprompt -f " [%%{$fg_bold[yellow]%%}%b%%{$reset_color%%}]") (%{$fg_bold[blue]%}$(rbenv_prompt_info)%{$reset_color%}) > %{$reset_color%}'
+parse_git_untracked() {
+  (command git status --porcelain | grep "^??") 2>/dev/null
+}
+
+parse_git_modified() {
+  (command git status --porcelain | grep "^\s*[MA]") 2>/dev/null
+}
+
+parse_git_dirty() {
+  local git_untracked="$(parse_git_untracked)"
+  local git_modified="$(parse_git_modified)"
+
+  if [ -n "$git_modified" ]; then
+    echo "%{$fg_bold[yellow]%}»%{$reset_color%}"
+  elif [ -n "$git_untracked" ]; then
+    echo "%{$fg_bold[blue]%}»%{$reset_color%}"
+  else
+    echo "%{$fg_bold[green]%}»%{$reset_color%}"
+  fi
+}
+
+git_branch() {
+  local git_where="$(parse_git_branch)"
+  [ -n "$git_where" ] && echo "[%{$fg_bold[yellow]%}${git_where#(refs/heads/|tags/)}%{$reset_color%}]"
+}
+
+prompt_status() {
+  local git_where="$(parse_git_branch)"
+  if [ -n "$git_where" ]; then
+    echo "$(parse_git_dirty)"
+  else
+    echo "»"
+  fi
+}
+
+PROMPT='%1~$(git_branch) $(prompt_status) '
