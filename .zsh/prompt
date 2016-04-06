@@ -52,4 +52,4 @@ prompt_status() {
   fi
 }
 
-PROMPT='%1~$(git_branch) $(prompt_status) '
+PROMPT='%~$(git_branch) $(prompt_status) '
