@@ -12,28 +12,41 @@ parse_git_modified() {
   (command git status --porcelain | grep "^\s*[MA]") 2>/dev/null
 }
 
-parse_git_dirty() {
+parse_git_unpushed() {
+  (command git cherry -v) 2>/dev/null
+}
+
+git_dirty_state() {
   local git_untracked="$(parse_git_untracked)"
   local git_modified="$(parse_git_modified)"
+  local color="green"
 
   if [ -n "$git_modified" ]; then
-    echo "%{$fg_bold[yellow]%}»%{$reset_color%}"
+    color="yellow"
   elif [ -n "$git_untracked" ]; then
-    echo "%{$fg_bold[blue]%}»%{$reset_color%}"
-  else
-    echo "%{$fg_bold[green]%}»%{$reset_color%}"
+    color="blue"
   fi
+
+  echo "%{$fg_bold[$color]%}»%{$reset_color%}"
 }
 
 git_branch() {
   local git_where="$(parse_git_branch)"
-  [ -n "$git_where" ] && echo "[%{$fg_bold[yellow]%}${git_where#(refs/heads/|tags/)}%{$reset_color%}]"
+  local git_unpushed="$(parse_git_unpushed)"
+  local branch_name="${git_where#(refs/heads/|tags/)}"
+  local color="green"
+
+  if [ -n "$git_unpushed" ]; then
+    color="yellow"
+  fi
+
+  [ -n "$git_where" ] && echo "[%{$fg_bold[$color]%}${branch_name}%{$reset_color%}]"
 }
 
 prompt_status() {
   local git_where="$(parse_git_branch)"
   if [ -n "$git_where" ]; then
-    echo "$(parse_git_dirty)"
+    echo "$(git_dirty_state)"
   else
     echo "»"
   fi
