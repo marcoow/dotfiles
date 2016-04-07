@@ -48,7 +48,7 @@ prompt_status() {
   if [ -n "$git_where" ]; then
     echo "$(git_dirty_state)"
   else
-    echo "»"
+    echo "%{$fg_bold[magenta]%}»%{$reset_color%}"
   fi
 }
 
