@@ -30,7 +30,6 @@
 
 [commit]
   template = ~/.gitmessage
-  gpgsign  = true
 
 [core]
   filemode         = true
