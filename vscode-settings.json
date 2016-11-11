@@ -1,0 +1,60 @@
+// Platzieren Sie Ihre Einstellungen in dieser Datei, um die Standardeinstellungen zu überschreiben.
+{
+  "editor.fontFamily": "Monaco",
+  "editor.fontWeight": "normal",
+  "editor.tabSize": 2,
+  "editor.rulers": [0],
+  "editor.roundedSelection": false,
+  "editor.wrappingColumn": -1,
+  "editor.acceptSuggestionOnEnter": false,
+  "editor.emptySelectionClipboard": false,
+  "editor.cursorBlinking": "smooth",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/.DS_Store": true,
+    "**/log": true,
+    "**/tmp": true,
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/bower_components": true,
+    "**/_build": true,
+    "**/fastboot-dist": true,
+    "**/cookbooks": true,
+    "**/coverage": true
+  },
+  "files.associations": {
+    "Capfile": "ruby",
+    "Gemfile": "ruby",
+    "Gemfile.lock": "ruby",
+    "Guardfile": "ruby"
+  },
+  "files.trimTrailingWhitespace": true,
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/node_modules/**": true,
+    "**/tmp/**": true,
+    "**/log/**": true,
+    "**/dist/**": true
+  },
+  "search.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/.DS_Store": true,
+    "**/log": true,
+    "**/tmp": true,
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/bower_components": true,
+    "**/_build": true,
+    "**/fastboot-dist": true,
+    "**/cookbooks": true,
+    "**/coverage": true
+  },
+  "git.enabled": false,
+  "workbench.sideBar.location": "right",
+  "workbench.statusBar.visible": true,
+  "window.reopenFolders": "none"
+}
