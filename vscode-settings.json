@@ -56,6 +56,7 @@
   "git.enabled": false,
   "workbench.sideBar.location": "right",
   "workbench.statusBar.visible": true,
+  "workbench.editor.enablePreview": false,
   "window.reopenFolders": "none",
   "explorer.openEditors.visible": 0
 }
