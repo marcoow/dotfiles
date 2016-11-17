@@ -58,5 +58,6 @@
   "workbench.statusBar.visible": true,
   "workbench.editor.enablePreview": false,
   "window.reopenFolders": "none",
-  "explorer.openEditors.visible": 0
+  "explorer.openEditors.visible": 0,
+  "extensions.autoUpdate": true
 }
