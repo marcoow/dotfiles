@@ -6,9 +6,9 @@
   "editor.rulers": [0],
   "editor.roundedSelection": false,
   "editor.wrappingColumn": -1,
-  "editor.acceptSuggestionOnEnter": false,
   "editor.emptySelectionClipboard": false,
   "editor.cursorBlinking": "smooth",
+  "editor.selectionHighlight": false,
   "files.exclude": {
     "**/.git": true,
     "**/.svn": true,
