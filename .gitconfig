@@ -35,7 +35,7 @@
   filemode         = true
   logallrefupdates = true
   whitespace       = space-before-tab, trailing-space, blank-at-eol, blank-at-eof
-  editor           = code -w
+  editor           = mate -w
   pager            = less -r
   autocrlf         = input
 
