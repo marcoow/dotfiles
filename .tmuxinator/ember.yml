@@ -1,0 +1,14 @@
+# ~/.tmuxinator/ember.yml
+
+name: ember
+root: .
+
+tmux_options: -f ~/.tmux
+
+windows:
+  - servers:
+      layout: tiled
+      panes:
+        -
+        -
+        -
