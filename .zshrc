@@ -15,7 +15,7 @@ fi
 
 export PATH="$HOME/.exenv/bin:$HOME/.erlenv/bin:$HOME/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/local/share/npm/bin:/usr/sbin:$PATH"
 export EDITOR=mate
-export ANDROID_HOME=`brew --prefix android`
+export ANDROID_HOME="/usr/local/opt/android-sdk"
 
 if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
 if which nodenv > /dev/null; then eval "$(nodenv init - zsh)"; fi
