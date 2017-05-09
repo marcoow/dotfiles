@@ -38,6 +38,7 @@
   editor           = mate -w
   pager            = less -r
   autocrlf         = input
+	excludesfile = /Users/marcoow/.gitignore-global
 
 [branch]
   autosetupmerge = true
