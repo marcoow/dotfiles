@@ -19,8 +19,9 @@ export ANDROID_HOME="/usr/local/opt/android-sdk"
 
 if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
 if which nodenv > /dev/null; then eval "$(nodenv init - zsh)"; fi
-if which erlenv > /dev/null; then eval "$(erlenv init - zsh)"; fi
-if which exenv > /dev/null; then eval "$(exenv init - zsh)"; fi
+
+test -s "$HOME/.kiex/scripts/kiex" && source "$HOME/.kiex/scripts/kiex"
+
 if which gh > /dev/null; then eval "$(gh alias -s)"; fi
 
 export PATH=./bin:"$PATH"
