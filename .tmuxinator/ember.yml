@@ -1,5 +1,3 @@
-# ~/.tmuxinator/ember.yml
-
 name: ember
 root: .
 

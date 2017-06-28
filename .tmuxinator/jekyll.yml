@@ -1,5 +1,3 @@
-# ~/.tmuxinator/jekyll.yml
-
 name: jekyll
 root: .
 
