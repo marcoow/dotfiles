@@ -8,8 +8,9 @@ tabSize        = 2
 softTabs       = true
 
 excludeDirectories    = "{$excludeDirectories,log,tmp,node_modules,dist,bower_components,_build,fastboot-dist,cookbooks,coverage,_site}"
-excludeInFolderSearch = "{$excludeInFolderSearch,log,tmp,node_modules,dist,bower_components,_build,fastboot-dist,cookbooks,coverage,_site}"
-includeFiles          = "{$includeFiles,.ruby-version,.node-version,.rspec,.gitignore,.travis.yml,.env,.jshintrc,.eslintrc.js,bowerrc,.rubocop.yml,.gitlab-ci.yml,.jscsrc,.ember-cli,.npmignore}"
+excludeInFolderSearch = "{$excludeInFolderSearch,log,tmp,node_modules,dist,bower_components,_build,fastboot-dist,cookbooks,coverage,_site,deps}"
+includeDirectories    = "{$includesDirectories,.tmuxinator,.bash,.zsh}"
+includeFiles          = "{$includeFiles,.ruby-version,.node-version,.rspec,.gitignore,.travis.yml,.env,.jshintrc,.eslintrc.js,bowerrc,.rubocop.yml,.gitlab-ci.yml,.jscsrc,.ember-cli,.npmignore,.zshrc,.ackrc,.bashrc,.gemrc,.gitconfig,.gitignore-global,.gitshrc,.irbrc,.profile,.sbtconfig,.tmux}"
 
 [ text ]
 spellChecking = true
