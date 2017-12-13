@@ -27,6 +27,7 @@
   sm     = submodule
   cntn   = branch --contains
   undo   = reset --soft HEAD^
+  last   = diff HEAD^ HEAD
 
 [commit]
   template = ~/.gitmessage
