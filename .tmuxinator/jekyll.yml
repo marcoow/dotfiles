@@ -7,5 +7,7 @@ windows:
   - servers:
       layout: even-vertical
       panes:
-        -
+        - server:
+          - bundle
+          - bundle exec jekyll serve --watch -H 0.0.0.0 --incremental
         -
