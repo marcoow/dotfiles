@@ -1,0 +1,13 @@
+name: ember-simple-auth
+root: .
+
+tmux_options: -f ~/.tmux
+
+windows:
+  - servers:
+      layout: 6878,129x46,0,0[129x22,0,0{64x22,0,0,0,64x22,65,0[64x11,65,0,1,64x10,65,12,3]},129x23,0,23,2]
+      panes:
+        - yarn workspace test-app start
+        - yarn workspace ember-simple-auth test -s --test-port 7359
+        - yarn workspace test-app test -s --test-port 7358
+        -
