@@ -14,7 +14,7 @@ then
 fi
 
 export PATH="$HOME/.cargo/bin:$HOME/.exenv/bin:$HOME/.erlenv/bin:$HOME/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/local/share/npm/bin:/usr/sbin:$PATH"
-export EDITOR=mate
+export EDITOR="nova -w"
 
 if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
 if which nodenv > /dev/null; then eval "$(nodenv init - zsh)"; fi
