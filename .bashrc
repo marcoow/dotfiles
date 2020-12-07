@@ -8,4 +8,3 @@ export EDITOR="nova -w"
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
-if which gh > /dev/null; then eval "$(gh alias -s)"; fi

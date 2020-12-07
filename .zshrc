@@ -21,8 +21,6 @@ if which nodenv > /dev/null; then eval "$(nodenv init - zsh)"; fi
 
 test -s "$HOME/.kiex/scripts/kiex" && source "$HOME/.kiex/scripts/kiex"
 
-if which gh > /dev/null; then eval "$(gh alias -s)"; fi
-
 export ERL_AFLAGS="-kernel shell_history enabled"
 
 export PATH=./bin:"$PATH"
