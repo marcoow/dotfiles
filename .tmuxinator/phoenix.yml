@@ -1,8 +1,6 @@
 name: phoenix
 root: .
 
-tmux_options: -f ~/.tmux
-
 windows:
   - servers:
       layout: tiled

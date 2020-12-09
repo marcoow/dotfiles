@@ -1,8 +1,6 @@
 name: jekyll
 root: .
 
-tmux_options: -f ~/.tmux
-
 windows:
   - servers:
       layout: even-vertical
