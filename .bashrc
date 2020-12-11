@@ -2,7 +2,8 @@ source ~/.bash/completion
 source ~/.bash/aliases
 source ~/.bash/prompt
 
-export PATH="$HOME/.rbenv/bin:/usr/local/sbin:/usr/local/bin:$PATH"
+export VOLTA_HOME="$HOME/.volta"
+export PATH="VOLTA_HOME/bin:$HOME/.rbenv/bin:/usr/local/sbin:/usr/local/bin:$PATH"
 
 export EDITOR="nova -w"
 

@@ -13,7 +13,8 @@ then
   done
 fi
 
-export PATH="$HOME/.cargo/bin:$HOME/.exenv/bin:$HOME/.erlenv/bin:$HOME/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/local/share/npm/bin:/usr/sbin:$PATH"
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$HOME/.cargo/bin:$HOME/.exenv/bin:$HOME/.erlenv/bin:$HOME/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/local/share/npm/bin:/usr/sbin:$PATH"
 export EDITOR="nova -w"
 
 if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
