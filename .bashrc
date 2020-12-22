@@ -3,7 +3,7 @@ source ~/.bash/aliases
 source ~/.bash/prompt
 
 export VOLTA_HOME="$HOME/.volta"
-export PATH="VOLTA_HOME/bin:$HOME/.rbenv/bin:/usr/local/sbin:/usr/local/bin:$PATH"
+export PATH="./bin:$VOLTA_HOME/bin:$HOME/.rbenv/bin:/usr/local/sbin:/usr/local/bin:$PATH"
 
 export EDITOR="nova -w"
 
