@@ -1,4 +1,3 @@
 alias git-deleted-stashes="git fsck --unreachable | grep commit | cut -d\  -f3 | xargs git log --merges --no-walk --grep=WIP"
 alias cat=ccat
-alias brew="arch -x86_64 brew"
 alias git="LANG=en_US.UTF-8 git"
