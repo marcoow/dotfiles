@@ -11,7 +11,7 @@ else
 fi
 
 export VOLTA_HOME="$HOME/.volta"
-export PATH="./bin:$VOLTA_HOME/bin:$HOME/.rbenv/bin:$PATH"
+export PATH="$HOME/.cargo/bin:./bin:$VOLTA_HOME/bin:$HOME/.rbenv/bin:$PATH"
 
 export EDITOR="nova -w"
 
