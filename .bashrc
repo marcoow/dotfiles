@@ -2,16 +2,8 @@ source ~/.bash/completion
 source ~/.bash/aliases
 source ~/.bash/prompt
 
-CPU=$(uname -p)
-if [[ "$CPU" == "arm" ]]; then
-  export PATH="/opt/homebrew/bin:$PATH"
-  alias oldbrew=/usr/local/bin/brew
-else
-  export PATH="/usr/local/sbin:/usr/local/bin:$PATH"
-fi
-
 export VOLTA_HOME="$HOME/.volta"
-export PATH="$HOME/.cargo/bin:./bin:$VOLTA_HOME/bin:$HOME/.rbenv/bin:$PATH"
+export PATH="$HOME/.cargo/bin:./bin:$VOLTA_HOME/bin:/opt/homebrew/bin:$HOME/.rbenv/bin:$PATH"
 
 export EDITOR="nova -w"
 
