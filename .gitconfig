@@ -38,7 +38,8 @@
   whitespace       = space-before-tab, trailing-space, blank-at-eol, blank-at-eof
   pager            = less -r
   autocrlf         = input
-	excludesfile = /Users/marcoow/.gitignore-global
+	excludesfile     = /Users/marcoow/.gitignore-global
+  ignorecase       = false
 
 [branch]
   autosetupmerge = true
