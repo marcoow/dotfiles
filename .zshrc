@@ -19,6 +19,7 @@ export EDITOR="nova -w"
 
 if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
 if which nodenv > /dev/null; then eval "$(nodenv init - zsh)"; fi
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
 export PATH="./bin:$VOLTA_HOME/bin:$PATH"
 
