@@ -1,0 +1,12 @@
+name: ember
+root: .
+
+windows:
+  - servers:
+      layout: tiled
+      panes:
+        - server:
+          - yarn
+          - yarn dev
+        -
+        -
