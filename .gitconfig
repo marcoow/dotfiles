@@ -86,7 +86,8 @@
   enabled = true
 
 [push]
-  default = current
+  default         = current
+  autosetupremote = true
 
 [init]
   defaultBranch = main
