@@ -1,0 +1,12 @@
+name: emberrust
+root: .
+
+windows:
+- servers:
+    layout: tiled
+    panes:
+      - app:
+        - cargo run
+      - tunnel:
+        - cloudflared tunnel --credentials-file .cloudflared/credentials.json run private-chat-roulette
+      -
