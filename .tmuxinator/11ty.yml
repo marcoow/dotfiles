@@ -1,0 +1,11 @@
+name: 11ty
+root: .
+
+windows:
+  - servers:
+      layout: even-vertical
+      panes:
+        - server:
+          - yarn
+          - yarn dev
+        -
