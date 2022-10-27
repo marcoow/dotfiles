@@ -1,6 +1,7 @@
 [user]
 	name  = Marco Otte-Witte
 	email = marco.otte-witte@simplabs.com
+  signingKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKuM5LSbpseLVOVLsBg8zCUhJ2sbplZ4X8duVSdQTPih marco.otte-witte@mainmatter.com"
 
 [credential]
   helper = osxkeychain
@@ -31,6 +32,10 @@
 
 [commit]
   template = ~/.gitmessage
+  gpgsign  = true
+
+[commit]
+  gpgsign  = true
 
 [core]
   filemode         = true
