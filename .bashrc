@@ -9,6 +9,10 @@ export EDITOR="nova -w"
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
-if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+if which pyenv > /dev/null; then
+  eval "$(pyenv init -)"
+  # Fix Homebrew/Pyenv interaction
+  alias brew="env PATH=${PATH//$(pyenv root)\/shims:/} brew"
+fi
 
 export PATH="./bin:$VOLTA_HOME/bin:$PATH"
