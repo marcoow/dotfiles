@@ -1,0 +1,13 @@
+name: gravity
+root: .
+
+windows:
+  - servers:
+      layout: tiled
+      panes:
+        - server:
+          - yarn
+          - yarn workspace @gravity/server start:dev
+        - tunnel:
+          - cloudflared tunnel --url http://localhost:3000
+        -
