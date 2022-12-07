@@ -7,7 +7,7 @@ windows:
       panes:
         - server:
           - yarn
-          - yarn workspace @gravity/server start:dev
+          - yarn workspace @gravityci/server start:dev
         - tunnel:
           - cloudflared tunnel --url http://localhost:3000
         -
