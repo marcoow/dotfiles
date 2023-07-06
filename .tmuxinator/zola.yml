@@ -1,0 +1,10 @@
+name: zola
+root: .
+
+windows:
+  - servers:
+      layout: even-vertical
+      panes:
+        - server:
+          - zola serve
+        -
