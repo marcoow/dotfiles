@@ -6,8 +6,10 @@ windows:
       layout: tiled
       panes:
         - server:
-          - yarn
-          - yarn workspace @gravityci/server start:dev
+          - export VOLTA_FEATURE_PNPM=1
+          - pnpm install
+          - pnpm dev:server
         - tunnel:
           - cloudflared tunnel --url http://localhost:3000
-        -
+        - cli:
+          - export VOLTA_FEATURE_PNPM=1
