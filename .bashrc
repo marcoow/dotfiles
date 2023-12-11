@@ -8,7 +8,6 @@ export PATH="$HOME/.cargo/bin:/opt/homebrew/bin:/opt/homebrew/sbin:$HOME/.rbenv/
 export EDITOR="nova -w"
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
 if which pyenv > /dev/null; then
   eval "$(pyenv init -)"
   # Fix Homebrew/Pyenv interaction
