@@ -6,6 +6,6 @@ windows:
       layout: even-vertical
       panes:
         - server:
-          - yarn
-          - yarn dev
+          - pnpm install
+          - pnpm run dev
         -
