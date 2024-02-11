@@ -49,6 +49,7 @@
 [branch]
   autosetupmerge = true
   autosetupmerge = always
+  sort           = -committerdate
 
 [diff]
   renames        = copies
