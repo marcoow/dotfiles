@@ -90,7 +90,8 @@
   statusHints = false
 
 [rerere]
-  enabled = true
+  enabled    = true
+  autoUpdate = true
 
 [push]
   default         = current
