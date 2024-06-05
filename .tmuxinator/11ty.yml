@@ -6,6 +6,8 @@ windows:
       layout: even-vertical
       panes:
         - server:
+          - export VOLTA_FEATURE_PNPM=1
           - pnpm install
           - pnpm run dev
         -
+          - export VOLTA_FEATURE_PNPM=1
