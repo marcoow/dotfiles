@@ -14,6 +14,13 @@ then
 fi
 
 export PATH="$HOME/.cargo/bin:$HOME/.exenv/bin:$HOME/.erlenv/bin:$HOME/.rbenv/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/share/npm/bin:/usr/sbin:$PATH"
+
+export PNPM_HOME="/Users/marcoow/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+
 export EDITOR="nova -w"
 
 if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
