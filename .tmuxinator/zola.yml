@@ -6,5 +6,6 @@ windows:
       layout: even-vertical
       panes:
         - server:
-          - zola serve
+          - pnpm i
+          - pnpm dev
         -
