@@ -1,0 +1,13 @@
+name: jekyll
+root: .
+
+windows:
+  - servers:
+      layout: tiled
+      panes:
+        - codex:
+          - codex
+        - dev_server:
+          - npm ci
+          - npm run dev
+        -
