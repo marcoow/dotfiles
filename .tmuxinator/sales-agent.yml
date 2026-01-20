@@ -8,6 +8,6 @@ windows:
         - codex:
           - codex
         - dev_server:
-          - npm ci
-          - npm run dev
+          - pnpm i --frozen-lockfile
+          - pnpm dev
         -
