@@ -13,7 +13,7 @@ then
   done
 fi
 
-export PATH="$HOME/.cargo/bin:$HOME/.exenv/bin:$HOME/.erlenv/bin:$HOME/.rbenv/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/share/npm/bin:/usr/sbin:$PATH"
+export PATH="$HOME/.local/bin:$HOME/.cargo/bin:$HOME/.exenv/bin:$HOME/.erlenv/bin:$HOME/.rbenv/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/share/npm/bin:/usr/sbin:$PATH"
 
 export PNPM_HOME="/Users/marcoow/Library/pnpm"
 case ":$PATH:" in

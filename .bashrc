@@ -3,7 +3,7 @@ source ~/.bash/aliases
 source ~/.bash/prompt
 
 
-export PATH="$HOME/.cargo/bin:/opt/homebrew/bin:/opt/homebrew/sbin:$HOME/.rbenv/bin:$PATH"
+export PATH="$HOME/.local/bin:$HOME/.cargo/bin:/opt/homebrew/bin:/opt/homebrew/sbin:$HOME/.rbenv/bin:$PATH"
 
 export PNPM_HOME="/Users/marcoow/Library/pnpm"
 case ":$PATH:" in
