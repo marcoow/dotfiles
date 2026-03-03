@@ -5,8 +5,8 @@ windows:
   - servers:
       layout: tiled
       panes:
-        - codex:
-          - codex
+        - claude:
+          - claude
         - dev_server:
           - pnpm i --frozen-lockfile
           - pnpm dev
