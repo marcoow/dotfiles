@@ -5,9 +5,13 @@ windows:
   - servers:
       layout: tiled
       panes:
-        - claude:
-          - claude
         - dev_server:
           - pnpm i --frozen-lockfile
           - pnpm dev
+        - tunnel:
+          - cloudflared tunnel --url http://localhost:3000
+        - containers:
+          - podman compose up
+        - claude:
+          - claude
         -
