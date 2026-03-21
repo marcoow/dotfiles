@@ -6,6 +6,7 @@ windows:
       layout: tiled
       panes:
         - dev_server:
+          - tmux resize-pane -U 5
           - pnpm i --frozen-lockfile
           - pnpm dev
         - tunnel:
