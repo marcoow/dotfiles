@@ -14,5 +14,5 @@ windows:
         - containers:
           - podman compose up
         - claude:
-          - claude
+          - opencode
         -
