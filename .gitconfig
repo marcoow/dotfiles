@@ -1,8 +1,8 @@
 [user]
 	name  = Marco Otte-Witte
 	email = marco.otte-witte@mainmatter.com
-  signingKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKuM5LSbpseLVOVLsBg8zCUhJ2sbplZ4X8duVSdQTPih marco.otte-witte@mainmatter.com"
-
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAII3O2WuEO3vSw3H9I0P3fvS30JP9qKH6jWtIKu5feYBi
+  
 [credential]
   helper = osxkeychain
 
@@ -102,6 +102,9 @@
 
 [gpg]
   format = ssh
+
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
 
 [credential "https://github.com"]
 	helper = !/opt/homebrew/bin/gh auth git-credential
